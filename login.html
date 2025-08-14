@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadollz - Sign Up</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, rgb(231, 109, 160), red);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Container holding both boxes */
+      .container {
+        display: flex;
+        gap: 2rem;
+      }
+
+      /* Left info box */
+      .info-box {
+        background: rgb(8, 0, 0);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(253, 253, 253, 0.3);
+        width: 350px;
+        text-align: center;
+      }
+      .info-box h1 {
+        color: rgb(247, 106, 150);
+        margin-bottom: 0.5rem;
+      }
+      .info-box img {
+        width: 100%;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+      }
+      .quote {
+        font-style: italic;
+        color: rgb(247, 106, 150);
+      }
+      .motto {
+        color: rgb(242, 68, 68);
+      }
+      h2 {
+        color: rgb(242, 68, 68);
+      }
+      /* Right sign-up box */
+      .signup-box {
+        background: rgb(8, 0, 0);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(254, 252, 253, 0.3);
+        width: 350px;
+        text-align: center;
+      }
+      select,
+      input {
+        width: 100%;
+        padding: 0.7rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        width: 100%;
+        padding: 0.7rem;
+        background: crimson;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      button:hover {
+        background: darkred;
+      }
+      img {
+        box-shadow: 0 4px 20px rgba(254, 252, 253, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Box -->
+      <div class="info-box">
+        <h1>Zadollz Boutique</h1>
+        <img
+          src="images/Unapologetically high maintenance 🦋✨.jpg"
+          alt="Fashion Style"
+        />
+        <p class="quote">
+          "Style is a way to say who you are without speaking."
+        </p>
+      </div>
+
+      <!-- Right Box -->
+      <div class="signup-box">
+        <h2>Create Your Account</h2>
+        <br />
+        <select id="country" required>
+          <option value="">Select your country</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="United States">United States</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="France">France</option>
+          <option value="Italy">Italy</option>
+          <option value="Ghana">Ghana</option>
+        </select>
+        <input
+          type="text"
+          id="username"
+          placeholder="Create Username"
+          required
+        />
+        <input type="email" id="email" placeholder="Email" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Create Password"
+          required
+        />
+
+        <p class="motto">Shop First Class Luxury</p>
+        <br />
+        <br />
+        <br />
+        <button onclick="signup()">Sign Up</button>
+      </div>
+    </div>
+
+    <script>
+      function signup() {
+        let country = document.getElementById("country").value;
+        let user = document.getElementById("username").value;
+        let email = document.getElementById("email").value;
+        let pass = document.getElementById("password").value;
+
+        if (!country || !user || !email || !pass) {
+          alert("Please fill in all fields.");
+          return;
+        }
+
+        // Save user data (in real projects, send to backend)
+        localStorage.setItem("country", country);
+        localStorage.setItem("username", user);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", pass);
+        localStorage.setItem("loggedIn", "true");
+
+        // Redirect to main page
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadollz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="container header-container">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-cart-fill"></i>
+          <span class="brand-text">Zadollz</span>
+        </a>
+        <h1 class="logo">Zadollz <span>Boutique</span></h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Collection</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h2>Elegance Meets Confidence</h2>
+          <p>Discover luxury fashion pieces that speak your style...</p>
+          <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    <header id="home" class="hero mb-4">
+      <div class="container hero-inner text-center py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="eyebrow text-uppercase fw-semibold mb-2">
+              Everyday is a fashion show and the world is the runway.
+            </p>
+            <h1 class="display-5 fw-bold">Your Dream Destination Awaits</h1>
+
+            <!-- Pink rectangle with images -->
+            <div class="hero-images">
+              <img src="images/download (20).jpg" alt="Image 1" />
+              <img src="images/download (10).jpg" alt="Image 2" />
+              <img src="images/download (11).jpg" alt="Image 3" />
+              <img src="images/download (19).jpg" alt="Image 4" />
+            </div>
+
+            <p class="mt-4">
+              Plan the perfect getaway with our trusted guides. Zadollz offers
+              premium and exquisite clothings that grab attention, sparkle and
+              make jaws drop! From our large collection of classic bags to our
+              luxurious hairs and grizzly jewelry, we would have you looking
+              like a star for that event.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about">
+      <div class="container about-container">
+        <!-- About text -->
+        <div class="about-text">
+          <h2>About Zadollz Boutique</h2>
+          <p>
+            At Zadollz, we celebrate femininity, strength, and beauty through
+            our curated collection of fashion pieces. Each item is handpicked to
+            ensure you not only look your best, but feel your best.
+          </p>
+        </div>
+
+        <!-- About image slider -->
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="images/teaa 🤏🏽.jpg" alt="About Zadollz" class="img1" />
+            <img src="images/💋.jpg" alt="About Zadollz2" class="img2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+          <!-- Product Card 1 -->
+          <div class="product-card">
+            <img src="images/PINK ACESSORIES💗⭐️.jpg" alt="Product 1" />
+            <h3>Pink Christain Dior Accessories</h3>
+            <p>Luxurious jewelry set perfect for elegant nights.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card">
+            <img src="images/🦢.jpg" alt="Product 2" />
+            <h3>Classic Black YSL Bag</h3>
+            <p>Bold, striking, and made for the confident woman.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card">
+            <img
+              src="images/handmade woman hair wig colorful wig.jpg"
+              alt="Product 3"
+            />
+            <h3>Barbie Bob Wig</h3>
+            <p>Chic and cute for signature elegance.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card">
+            <img
+              src="images/Embroidered Ice Silk V-Neck Casual Comfortable Sleepwear, Sexy Elegant Criss-Cross Back Slip Nightgown (1).jpg"
+              alt="Product 4"
+            />
+            <h3>Silk Sleepwear</h3>
+            <p>Embroidered and elegant sexy nightie.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card">
+            <img src="images/download (23).jpg" alt="Product 5" />
+            <h3>Rose Pink Sequin Shoes</h3>
+            <p>Soft or Baddie with a feminine silhouette.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card">
+            <img src="images/download (25).jpg" alt="Product 6" />
+            <h3>Pink Louis Vutton Slides</h3>
+            <p>Light and breezy, perfect for warm days.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div class="product-card">
+            <img src="images/download (4).jpg" alt="Product 7" />
+            <h3>Ombre Wavy Wig</h3>
+            <p>Rich and timeless for every occasion.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div class="product-card">
+            <img src="images/download (7).jpg" alt="Product 8" />
+            <h3>Greeen Lace Lingerie</h3>
+            <p>Sexy, clean, and effortlessly stylish.</p>
+            <a href="#" class="btn btn-secondary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <!-- Left Images Stack -->
+        <div class="footer-images left-stack">
+          <img src="images/download (24).jpg" alt="Left Image 1" />
+          <img src="images/download (27).jpg" alt="Left Image 2" />
+        </div>
+        <!-- Main Footer Content -->
+        <div class="footer-content">
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a> <a href="#collection">Collection</a>
+            <a href="#about">About Us</a> <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-newsletter">
+            <h4>Join Us</h4>
+            <p>Get 10% off your first purchase</p>
+            <form>
+              <input type="email" placeholder="Your email" />
+              <button class="sub-button" type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="icons/tiktok.svg" alt="TikTok" /></a>
+            <a href="#"><img src="icons/pinterest.svg" alt="Pinterest" /></a>
+          </div>
+        </div>
+        <!-- Right Images Stack -->
+        <div class="footer-images right-stack">
+          <img src="images/download (40).jpg" alt="Right Image 1" />
+          <img src="images/download (26).jpg" alt="Right Image 2" />
+        </div>
+        <!-- Middle Featured Section -->
+        <div class="footer-featured">
+          <div class="featured-images">
+            <img src="images/download (8).jpg" alt="Product 1" />
+            <img
+              src="images/The color pink is the color of universal love of oneself and of others_ Pink represents friendship, affection, harmony, inner peace… _ Instagram.jpg"
+              alt="Product 2"
+            />
+            <img src="images/download (3).jpg" alt="Product 3" />
+            <img src="images/download (22).jpg" alt="Product 4" />
+          </div>
+          <p class="featured-quote">
+            "Elegance is when the inside is as beautiful as the outside."
+          </p>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Zadollz Boutique – Designed with ♥ in Abuja</p>
+      </div>
+    </footer>
+  </body>
+</html>
