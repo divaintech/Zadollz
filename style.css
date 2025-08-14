@@ -443,3 +443,33 @@ footer {
   color: #555;
   margin: 0;
 }
+/* RESPONSIVE FOOTER FEATURED SECTION */
+@media (max-width: 768px) {
+  .featured-images {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+  }
+
+  .featured-images img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  .featured-quote {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+}
+
+/* Extra-small devices (phones) */
+@media (max-width: 480px) {
+  .featured-images img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .featured-quote {
+    font-size: 0.85rem;
+  }
+}
